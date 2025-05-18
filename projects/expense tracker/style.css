@@ -89,7 +89,7 @@ form button {
 
 
 .but{
-  background-color: #ff4c4c;   /* Bright red for reset */
+  background-color: #ff4c4c;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -104,11 +104,11 @@ form button {
 }
 
 button:hover {
-  background-color: #e04343;  /* Darker red on hover */
+  background-color: #e04343;
   box-shadow: 0 6px 8px rgba(224, 67, 67, 0.6);
 }
 
 button:active {
-  background-color: #b73737;  /* Even darker on click */
+  background-color: #b73737;
   box-shadow: 0 2px 4px rgba(183, 55, 55, 0.8);
 }
