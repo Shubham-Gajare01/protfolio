@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("3yu1qq7AlSdAp3MRU");
+    })();
+  </script>
+  <title>Shubham Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Shubham Gajare</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+
+    <h2>About Me</h2>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm Shubham Gajare, a first-year BSc Computer Science student with a growing interest in web development and problem-solving.
+          I'm currently learning <b>HTML, CSS, JavaScript, react.js, pl/sql,</b> and exploring backend technologies like <b>Express.js.</b>
+        </p>
+        <p>
+          I love creating clean, responsive websites and I'm passionate about building projects that solve real-world problems.
+          I'm currently working on improving my frontend design skills.
+        </p>
+        <p>
+          I'm looking for opportunities to learn through internships, open-source projects, or team collaborations. 
+          When I’m not coding, I enjoy reading tech blogs and watching tutorials to stay updated with new trends.
+        </p>
+      </section>
+    
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+  <div class="project-item">
+    <h3>Simple Calculator</h3>
+    <p>A clean and responsive calculator built using HTML, CSS, and JavaScript. It performs basic arithmetic operations.</p>
+    <a href="projects/calculator/index.html" target="_blank">View Project</a>
+  </div>
+  <div class="project-item">
+    <h3>EmailJS Contact Form</h3>
+    <p>This is a simple, clean, and responsive contact form made with HTML, CSS, and JavaScript. It uses EmailJS to send emails right from the browser, so there’s no need for a backend server. The form checks that all fields are filled out and gives clear feedback, making it easy and reliable to use. It’s a great addition to any portfolio or personal website to help visitors get in touch with you effortlessly.</p>
+    <a href="projects/email/index.html" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Account name with id" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <input type="text" id="subject" placeholder="Subject" required />
+          <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p id="feedback"></p>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
