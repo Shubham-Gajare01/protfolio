@@ -9,81 +9,203 @@
       emailjs.init("3yu1qq7AlSdAp3MRU");
     })();
   </script>
-  <title>Shubham Portfolio</title>
+  <title>Shubham Gajare | Web Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-
-  <header>
-    <h1>Shubham Gajare</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="about">
-
-    <h2>About Me</h2>
-    <section id="about">
-        <h2>Shubham Gajare</h2>
-        <p>
-          I'm a Third-year BSc Computer Science student with a growing interest in web development and problem-solving.
-          I'm currently learning <b>HTML, CSS, JavaScript, react.js, pl/sql,</b> and exploring backend technologies like <b>Express.js.</b>
-        </p>
-        <p>
-          I love creating clean, responsive websites and I'm passionate about building projects that solve real-world problems.
-          I'm currently working on improving my frontend design skills.
-        </p>
-        <p>
-          I'm looking for opportunities to learn through internships, open-source projects, or team collaborations. 
-          When I’m not coding, I enjoy reading tech blogs and watching tutorials to stay updated with new trends.
-        </p>
-      </section>
-    
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-  <div class="project-item">
-    <h3>Simple Calculator</h3>
-    <p>A clean and responsive calculator built using HTML, CSS, and JavaScript. It performs basic arithmetic operations.</p>
-    <a href="projects/calculator/index.html">View Project</a>
-  </div>
-  <div class="project-item">
-    <h3>EmailJS Contact Form</h3>
-    <p>This is a simple, clean, and responsive contact form made with HTML, CSS, and JavaScript. It uses EmailJS to send emails right from the browser, so there’s no need for a backend server. The form checks that all fields are filled out and gives clear feedback, making it easy and reliable to use. It’s a great addition to any portfolio or personal website to help visitors get in touch with you effortlessly.</p>
-    <a href="projects/email/index.html">View Project</a>
-    </div>
-    <div class="project-item">
-    <h3>Expense tracker</h3>
-    <p>Take Control of Your Finances: This intuitive expense tracker empowers you to effortlessly monitor your spending, categorize transactions, and gain clear insights into your financial habits. Visualize where your money goes and make informed decisions to achieve your financial goals.</p>
-    <a href="projects/expense tracker/index.html">View Project</a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="form-container">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-          <input type="text" id="name" placeholder="Account name with id" required />
-          <input type="email" id="email" placeholder="Your Email" required />
-          <input type="text" id="subject" placeholder="Subject" required />
-          <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-        <p id="feedback"></p>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="logo">
+        <span>S</span>
       </div>
-  </section>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-icons">
+        <a href="https://github.com/Shubham-Gajare01" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="www.linkedin.com/in/shubham-gajare-coder" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="www.linkedin.com/in/shubham-gajare-coder" aria-label="X"><i class="fab fa-twitter"></i></a>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-sun sun-icon"></i>
+        <i class="fas fa-moon moon-icon"></i>
+      </button>
+    </aside>
 
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <h1>Hi,<br>I'm <span class="highlight">Shubham</span>,<br>web developer</h1>
+          <p class="subtitle">Front End Developer / Computer Science Student</p>
+          <a href="#contact" class="cta-button">Contact me!</a>
+        </div>
+        <div class="hero-visual">
+          <div class="abstract-graphic"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a Third-year BSc Computer Science student with a growing interest in web development and problem-solving.
+              I'm currently learning <span class="highlight-text">HTML, CSS, JavaScript, React.js, PL/SQL</span>, and exploring backend technologies like <span class="highlight-text">Express.js</span>.
+            </p>
+            <p>
+              I love creating clean, responsive websites and I'm passionate about building projects that solve real-world problems.
+              I'm currently working on improving my frontend design skills.
+            </p>
+            <p>
+              I'm looking for opportunities to learn through internships, open-source projects, or team collaborations. 
+              When I'm not coding, I enjoy reading tech blogs and watching tutorials to stay updated with new trends.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span>HTML</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <span>CSS</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <span>JavaScript</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+              </div>
+              <div class="skill-item">
+                <span>React.js</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 65%"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <span>Express.js</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
+              </div>
+              <div class="skill-item">
+                <span>PL/SQL</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Simple Calculator</h3>
+              <p>A clean and responsive calculator built using HTML, CSS, and JavaScript. It performs basic arithmetic operations.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="projects/calculator/index.html" class="project-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>EmailJS Contact Form</h3>
+              <p>A simple, clean, and responsive contact form made with HTML, CSS, and JavaScript. It uses EmailJS to send emails right from the browser.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>EmailJS</span>
+              </div>
+              <a href="projects/email/index.html" class="project-link">View Project</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Expense Tracker</h3>
+              <p>Take Control of Your Finances: This intuitive expense tracker empowers you to effortlessly monitor your spending and gain insights into your financial habits.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="projects/expense tracker/index.html" class="project-link">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>shubhamgajare01@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>+91 9702240535</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Maharashtra, India</p>
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+          <p id="feedback"></p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>&copy; 2025 Shubham Gajare. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
 
   <script src="script.js"></script>
+  <script src="theme.js"></script>
 </body>
 </html>
